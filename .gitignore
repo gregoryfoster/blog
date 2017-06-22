@@ -1,7 +1,7 @@
 ### Application ###
 .venv
 *~
-static
+/static
 
 # Created by https://www.gitignore.io/api/osx,django,python
 ### Django ###
