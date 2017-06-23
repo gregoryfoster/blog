@@ -21,6 +21,7 @@ import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.environ['SECRET_KEY']
+DEBUG = os.environ['DEBUG']
 
 
 # Application definition
@@ -114,8 +115,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ALLOWED_HOSTS = ['*']
-
-DEBUG = False
 
 
 # Database
