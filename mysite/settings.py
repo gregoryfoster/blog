@@ -127,8 +127,7 @@ ALLOWED_HOSTS = ['*']
 # https://devcenter.heroku.com/articles/django-app-configuration
 
 DATABASES = {}
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+DATABASES['default'] = dj_database_url.config(conn_max_age=500)
 
 
 # Import overrides in local_settings.py
