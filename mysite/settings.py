@@ -8,6 +8,9 @@ https://docs.djangoproject.com/en/1.11/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
+
+Production deployment checklist:
+https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 """
 
 import os
@@ -17,12 +20,7 @@ import dj_database_url
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '_cop$^@k7@%kmja-(6d2huv(4lvg7m_rkmg91-nm90vys4p-1%'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 
 # Application definition
